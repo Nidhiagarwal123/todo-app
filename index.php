@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
 	</head>
 <body>
@@ -52,8 +52,11 @@
 									echo 
 									'<a href="update.php?task_id='.$fetch['task_id'].'" class="btn btn-success"><span class="glyphicon glyphicon-check"></span></a> |';
 								}
+									echo '<a href="delete.php?task_id='.$fetch['task_id'].'" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>';
+								
+							   
+
 							?>
-							 <a href="delete.php?task_id=<?php echo $fetch['task_id']?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
 						</center>
 					</td>
 				</tr>
